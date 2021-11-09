@@ -2,16 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+<BrowserRouter>
+   <App />
+</BrowserRouter>
+,document.getElementById('root'));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+//Browser router ka kaam ye h ki jitne bh page ko render krana h
+//usko hmesha browser router elemnt me likhna padta h
+//ek se jyada elelment ko hm directly render ni kra skte h
+//Aur agar jyada render krana h to div ya react ka syntactic 
+//sugar form use krna padeaga
